@@ -1,4 +1,4 @@
 namespace dotnet_images.Src.DTOs
 {
-    public class CreateImageDto { }
+    public class CreatePostDto { }
 }

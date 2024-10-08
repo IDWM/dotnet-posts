@@ -10,7 +10,7 @@ using dotnet_images.Src.Data;
 namespace dotnet_images.Src.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20241008230741_InitialCreate")]
+    [Migration("20241008231853_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -19,7 +19,7 @@ namespace dotnet_images.Src.Data.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.10");
 
-            modelBuilder.Entity("dotnet_images.Src.Models.Image", b =>
+            modelBuilder.Entity("dotnet_images.Src.Models.Post", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
@@ -43,7 +43,7 @@ namespace dotnet_images.Src.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Images");
+                    b.ToTable("Posts");
                 });
 #pragma warning restore 612, 618
         }

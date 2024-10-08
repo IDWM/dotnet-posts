@@ -1,6 +1,6 @@
 namespace dotnet_images.Src.Models
 {
-    public class Image
+    public class Post
     {
         public long Id { get; set; }
         public required string Title { get; set; }

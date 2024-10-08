@@ -3,14 +3,14 @@ using dotnet_images.Src.Interfaces;
 
 namespace dotnet_images.Src.Repositories
 {
-    public class ImageRepository : IImageRepository
+    public class PostRepository : IPostRepository
     {
-        public Task CreateImageAsync(CreateImageDto createImageDto)
+        public Task CreatePostAsync(CreatePostDto createPostDto)
         {
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<ImageDto>> GetImagesAsync()
+        public Task<IEnumerable<PostDto>> GetPostsAsync()
         {
             throw new NotImplementedException();
         }

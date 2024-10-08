@@ -5,6 +5,6 @@ namespace dotnet_images.Src.Data
 {
     public class DataContext(DbContextOptions<DataContext> options) : DbContext(options)
     {
-        public DbSet<Image> Images { get; set; }
+        public DbSet<Post> Posts { get; set; }
     }
 }
