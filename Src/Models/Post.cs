@@ -1,4 +1,4 @@
-namespace dotnet_images.Src.Models
+namespace dotnet_posts.Src.Models
 {
     public class Post
     {

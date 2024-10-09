@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace dotnet_images.Src.Data.Migrations
+namespace dotnet_posts.Src.Data.Migrations
 {
     /// <inheritdoc />
     public partial class InitialCreate : Migration

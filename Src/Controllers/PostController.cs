@@ -1,8 +1,8 @@
-using dotnet_images.Src.DTOs;
-using dotnet_images.Src.Interfaces;
+using dotnet_posts.Src.DTOs;
+using dotnet_posts.Src.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
-namespace dotnet_images.Src.Controllers
+namespace dotnet_posts.Src.Controllers
 {
     public class PostController(IPostRepository postRepository) : BaseApiController
     {

@@ -2,11 +2,11 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using dotnet_images.Src.Data;
+using dotnet_posts.Src.Data;
 
 #nullable disable
 
-namespace dotnet_images.Src.Data.Migrations
+namespace dotnet_posts.Src.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
     partial class DataContextModelSnapshot : ModelSnapshot
@@ -16,7 +16,7 @@ namespace dotnet_images.Src.Data.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.10");
 
-            modelBuilder.Entity("dotnet_images.Src.Models.Post", b =>
+            modelBuilder.Entity("dotnet_posts.Src.Models.Post", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()

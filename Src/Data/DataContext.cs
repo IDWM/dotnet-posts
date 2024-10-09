@@ -1,7 +1,7 @@
-using dotnet_images.Src.Models;
+using dotnet_posts.Src.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace dotnet_images.Src.Data
+namespace dotnet_posts.Src.Data
 {
     public class DataContext(DbContextOptions<DataContext> options) : DbContext(options)
     {

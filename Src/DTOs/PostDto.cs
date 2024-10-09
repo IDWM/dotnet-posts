@@ -1,4 +1,4 @@
-namespace dotnet_images.Src.DTOs
+namespace dotnet_posts.Src.DTOs
 {
     public class PostDto
     {

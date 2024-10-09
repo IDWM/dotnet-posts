@@ -1,7 +1,7 @@
-using dotnet_images.Src.DTOs;
-using dotnet_images.Src.Interfaces;
+using dotnet_posts.Src.DTOs;
+using dotnet_posts.Src.Interfaces;
 
-namespace dotnet_images.Src.Repositories
+namespace dotnet_posts.Src.Repositories
 {
     public class PostRepository : IPostRepository
     {

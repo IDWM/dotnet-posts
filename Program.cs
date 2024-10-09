@@ -1,4 +1,4 @@
-using dotnet_images.Src.Data;
+using dotnet_posts.Src.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

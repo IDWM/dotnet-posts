@@ -1,6 +1,6 @@
-using dotnet_images.Src.DTOs;
+using dotnet_posts.Src.DTOs;
 
-namespace dotnet_images.Src.Interfaces
+namespace dotnet_posts.Src.Interfaces
 {
     public interface IPostRepository
     {
