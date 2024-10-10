@@ -5,6 +5,6 @@ namespace dotnet_posts.Src.Interfaces
     public interface IPostRepository
     {
         Task<IEnumerable<PostDto>> GetPostsAsync();
-        Task CreatePostAsync(CreatePostDto createPostDto);
+        Task CreatePostAsync(CreatePostDto createPostDto, string url, string publicId);
     }
 }
