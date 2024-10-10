@@ -1,18 +1,40 @@
+using dotnet_posts.Src.Data;
 using dotnet_posts.Src.DTOs;
 using dotnet_posts.Src.Interfaces;
+using dotnet_posts.Src.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace dotnet_posts.Src.Repositories
 {
-    public class PostRepository : IPostRepository
+    public class PostRepository(DataContext dataContext) : IPostRepository
     {
-        public Task CreatePostAsync(CreatePostDto createPostDto)
+        private readonly DataContext _dataContext = dataContext;
+
+        public async Task CreatePostAsync(CreatePostDto createPostDto, string url, string publicId)
         {
-            throw new NotImplementedException();
+            var post = new Post
+            {
+                Title = createPostDto.Title,
+                Description = createPostDto.Description,
+                Url = url,
+                PublicId = publicId
+            };
+
+            await _dataContext.Posts.AddAsync(post);
+            await _dataContext.SaveChangesAsync();
         }
 
-        public Task<IEnumerable<PostDto>> GetPostsAsync()
+        public async Task<IEnumerable<PostDto>> GetPostsAsync()
         {
-            throw new NotImplementedException();
+            return await _dataContext
+                .Posts.Select(post => new PostDto
+                {
+                    Title = post.Title,
+                    Description = post.Description,
+                    Url = post.Url,
+                    PublicId = post.PublicId
+                })
+                .ToArrayAsync();
         }
     }
 }
